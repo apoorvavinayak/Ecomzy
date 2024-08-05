@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-color: #fff;
+}
+.card{
+  @media (min-width: 0px) {
+    
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    
+}
+}
+.btn-price{
+  @media(max-width:400px){
+    display: flex;
+    flex-direction: column;
+    /* //border: 2px solid black; */
+    justify-content: center;
+    gap: 1rem ;
+  }
+}
+.btn{
+  margin-bottom: 5px;
+}
+.home{
+  @media(max-width:440px){
+    display: none;
+  }
+}
